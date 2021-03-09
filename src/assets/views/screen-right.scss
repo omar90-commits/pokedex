@@ -1,0 +1,9 @@
+.screen-right {
+	background-color: #E52B24;
+	border: 2px solid black;
+	border-left: none;
+	height: 83.8%;
+	margin-top: 4.5rem;
+
+	@import '../layaut/screenAndBtn-right.scss';
+}

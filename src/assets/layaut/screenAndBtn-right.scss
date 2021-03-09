@@ -1,0 +1,55 @@
+.screen-right__border {
+	border: 10px solid black;
+	background-color: black;
+	margin: 1rem;
+
+	.screen-right__screen {
+		border-radius: 10px;
+		height: 260px;
+		background-color: #3AABF4;
+		color: white;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-content: center;
+		font-size: .9rem;
+
+		div {
+			margin: 0 1rem;
+		}
+	}
+
+	.name-pokemon {
+		text-align: left;
+		cursor: pointer;
+		text-transform: capitalize;
+		padding: .1rem 0;
+
+		&:hover {
+			color: black;
+			font-weight: bold;
+			background-color: #82C8F7;
+		}		
+	}
+
+	p {
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.screen-right__btn-container {
+	margin: 1.4rem 1rem;
+	text-align: center;
+
+	button {
+		padding: .3rem 1.5rem;
+		cursor: pointer;
+		border: 4px solid black;
+		border-radius: 4px;
+		font-weight: bold;
+
+		&:first-child {
+			margin-right: 2rem;
+		}
+	}
+}

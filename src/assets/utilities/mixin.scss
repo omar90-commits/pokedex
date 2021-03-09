@@ -1,0 +1,8 @@
+@mixin buttonsTop($w, $h, $mr, $background, $border) {
+	width: $w;
+	height: $h;
+	border-radius: 50%;
+	margin-right: $mr;
+	background:  $background;
+	border: $border;
+}

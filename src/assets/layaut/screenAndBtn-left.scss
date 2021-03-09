@@ -1,0 +1,96 @@
+.container-screen {
+	display: grid;
+	grid-template-columns: 90% 10%;
+}
+
+.separator {
+	background-color: #E52B24;
+	height: 100%;
+	border-left: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.separator__one {
+		@extend %separator;
+		border-bottom: 2px solid black;
+	}
+
+	.separator__two {
+		@extend %separator;
+		border-top: 2px solid black;
+	}
+}
+
+.screen-left__screen-and-btn {
+	background-color: #323E48;
+	border-radius: 4px;
+	clip-path: polygon(100% 0, 100% 100%, 19% 100%, 0 90%, 0 0);
+	margin: 1rem 1rem 1.5rem;
+	padding: 1.2rem;
+}
+
+.stripes {
+	padding-left: 2rem;
+	
+	p {
+		@extend %stripes;
+	}
+}
+
+.screen-left__screen {
+	background-color: white;
+	width: 100%;
+	height: 250px;
+
+	.name-id {
+		@extend %flexbox;
+		align-items: center;
+	}
+
+	.container-img {
+		text-align: center;
+
+		img {
+			width: 85px;
+			height: 85px;
+		}
+	}
+
+	.container-statistics {
+		@extend %flexbox;
+		color: white;
+	}
+
+	.weight-height {
+		background-color: rgba(0, 0, 0, .5);
+		border-radius: 4px;
+		padding: .4rem;
+	}
+
+	.powers {
+		@extend %powers;
+	}
+}
+
+.screen-left__screen--title {
+	color: white;
+	text-transform: capitalize;
+}
+
+.screen-left__btn-container {
+	margin-top: 1.5rem;
+	padding-left: 1.5rem;
+	padding-bottom: .9rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.screen-left__btn-container--btn {
+	background-color: #F83312;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+	cursor: pointer;
+}

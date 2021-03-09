@@ -1,0 +1,23 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin-top: 4rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-pokedex {
+	width: 700px;
+	display: grid;
+	grid-template-columns: 55% 45%;
+}
+
+@import './utilities/variables.scss';
+@import './utilities/mixin.scss';
+@import './utilities/place-holder.scss';
+
+@import './components/spinner.scss';
+
+@import './views/screen-left.scss';
+@import './views/screen-right.scss';

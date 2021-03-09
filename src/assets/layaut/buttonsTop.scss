@@ -1,0 +1,25 @@
+.screen-left__buttonsTop {
+	@extend %screen-left__buttonsTop;
+}
+
+p {
+	margin: .7rem 0;
+}
+
+.left__buttonsTop--blue {
+	@include buttonsTop(30px, 30px, 1.3rem, $gradiente-blue, $border-white);
+	margin-bottom: .4rem;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+}
+
+.left__buttonsTop--red {
+	@include buttonsTop(15px, 15px, .2rem, $gradiente-red, $border-black);
+}
+
+.left__buttonsTop--yellow {
+	@include buttonsTop(15px, 15px, .2rem, $gradiente-yellow, $border-black);
+}
+
+.left__buttonsTop--green {
+	@include buttonsTop(15px, 15px, .2rem, $gradiente-green, $border-black);
+}
